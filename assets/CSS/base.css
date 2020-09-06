@@ -1,0 +1,135 @@
+:root{
+    --white--color: #fff;
+    --black--color: #000;
+    --text--color: #333;
+    --orange--color: #ff8a00;
+    --content--color: #ff8a00;
+    --background-color-main:#353b48;
+    --background-color-sup:#ff8a00;
+    --border-color:#dbdbdb;   
+}
+
+*{
+    box-sizing:inherit; /*ke thua the chua no*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+html {
+    /* TIP, 1 rem = 10px voi font-size la 62.5% */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* Responsive */
+.inner-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.grid {
+    /* voi man hinh nho hon 1400, max-width se giam kich co */
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width: 100%;
+}
+
+.grid_row {
+    /* nam chung 1 hang ngang, du thi nhay xuong hang */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+ @keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+ }
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+}
+
+.modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0 ,0, 0.3);
+}
+
+.modal__body {
+    --growth-from: 0.3;
+    --growth-to: 1;
+    margin: auto;
+    z-index: 1;
+    animation: growth linear 0.2s;
+}
+
+/* Button style */
+.btn {
+    min-width: 142px;
+    height:36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3rem;
+    outline:none;
+    cursor: pointer;
+    display: inline-flex;
+    color: #666;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.btn.btn--primary {
+    color: var(--white--color);
+    background-color: var(--orange--color);
+    font-size:1.4rem;
+}
+
+.btn.btn.btn--disabled {
+    color:#999;
+    cursor: default;
+    background-color: #999;
+}

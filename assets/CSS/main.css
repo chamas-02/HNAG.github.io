@@ -1,0 +1,731 @@
+/*Header*/
+.header {
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    padding:3rem 0;
+    transition:  .3s linear;
+}
+
+.inner-width {
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 4rem;
+}
+
+.logo{
+    width: 10rem;
+    height: 10rem;
+    background-size: contain;
+    background: url(../Image/Icon/food.png);
+    transition: .1s linear;
+}
+
+.logo:hover{
+    background-color: var(--orange--color);
+    border-radius: 50%;
+}
+
+
+.header .inner-width {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggler {
+    background: none;
+    width: 3rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span {
+    display: block;
+    height: 0.3rem;
+    background-color: #fff;
+    margin: 0.6rem 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.header__menu a{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    transition: .2s linear;
+}
+
+.header__menu a:hover {
+    color: #48dbfb !important;
+}
+
+.sticky {
+    background-color: #f9f9f9;
+    padding: 1.8rem 0;
+}
+
+.sticky .logo{
+    background-image: url(../Image/Icon/icons8-sunny-side-up-eggs-100.png);
+}
+
+.sticky .header__menu a{
+    color:var(--orange--color);
+}
+
+.sticky .menu-toggler span{
+    color: var(--orange--color);
+}
+
+#banner {
+    height: 100vh;
+    min-height: 50rem;
+    background: url(../Image/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#banner .content{
+    width:100%;
+    color: #fff;
+}
+
+#banner .content h1{
+    font-size: 6rem;
+    margin-bottom: 6rem;
+}
+
+#banner .content h1::after {
+    content: " Chấm Bảo";
+    animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim{
+    25%{
+        content: " Hoàng Nam";
+    }
+    50% {
+        content: " A Developer";
+    }
+    75% {
+        content: " Food Blogger"
+    }
+}
+
+.social-media a{
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    transition: .2s linear;
+}
+
+.social-media a:hover{
+    color: #48dbfb;
+}
+
+section{
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.section__title{
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    font-size: 26px;
+    padding-bottom: 20px;
+    color: #666;
+}
+
+.section__title::before {
+    content:"";
+    position: absolute;
+    width:80px;
+    height:3px;
+    background-color: #111;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+.section__title::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    background-color: #3498db;
+    border: 4px soild #f1f1f1;
+    left: calc(50% - 6px);
+    bottom: -3px;
+}
+
+.about__content{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__pic{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+.about__text {
+    flex: 1;
+}
+
+.about__text h3 {
+    margin: 10px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.about__text h3 span:nth-child(1):after,
+.about__text h3 span:nth-child(2):after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 14px;
+}
+
+.about__text p{
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.skills{
+    margin-top:4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: calc(50% - 20px);
+    margin: 15px 0;
+}
+
+.skill__info {
+    display:flex;
+    justify-content: space-between;
+}
+
+.skill__info span{
+    font-size:1.5rem;
+}
+
+.skill__bar {
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 14px;
+    position: relative;
+}
+
+.skill__bar::after{
+    content:"";
+    position: absolute;
+    height: 6px;
+    background-color: #48dbfb;
+    bottom: 0;
+}
+
+.html:after{
+    width: 90%;
+}
+.css:after{
+    width: 80%;
+}
+.cplusplus:after{
+    width: 70%;
+}
+.js:after{
+    width: 50%;
+}
+
+section.dark{
+    background-color: #353b48;
+}
+
+section.light{
+    background-color: #f9f9f9;
+}
+
+section.dark .section__title{
+    color:#f1f1f1;
+}
+
+section.dark .section__title::before{
+    background-color: #f1f1f1;
+}
+
+#reviews {
+    background-color: #353b48;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.foods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.review {
+    width: calc(33% - 20px);
+    text-align: center;
+    border: 1px solid #48db48;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 4rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.food {
+    width: calc(33% - 20px);
+    text-align: center;
+    border: 1px solid #48db48;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 10rem 5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.review .icon{
+    color: #48dbfb;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    transition: .3s linear;
+}
+.food .icon{
+    color: #48dbfb;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    transition: .3s linear;
+}
+
+.review h4{
+    font-size:26px;
+    margin-bottom: 6px;
+}
+.food h4{
+    font-size:26px;
+    margin-bottom: 6px;
+    color:#f5f5f5;
+}
+
+.review p{
+    font-size: 16px;
+}
+.food p{
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.review:hover {
+    background-color: #44dbfb;
+}
+
+.review:hover .icon{
+    color: #fff;
+}
+
+@media screen and (max-width:980px){
+    .menu-toggler{
+        display: block;
+    }
+    .menu-toggler span{
+        background-color: var(--orange--color);
+    }
+    .header__menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #666;
+        top: 0;
+        right: -100%;
+        max-width: 40rem;
+        padding: 8rem 5rem;
+        transition: .3s linear;
+    }
+
+    .header__menu a{
+        display: block;
+        font-size: 3rem;
+        margin:3rem 0;
+    }
+
+    .sticky .header__menu {
+        background-color: #f9f9f9;
+    }
+
+    .header__menu.active{
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top:4px;
+    }
+    .menu-toggler.active span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-toggler.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom:14px;
+    }
+
+    .inner-width{
+        max-width: 800px;
+    }
+
+    .about__pic{
+        margin: 0 auto 60px;
+    }
+
+    .about__text{
+        flex: 100%;
+        text-align: center;
+    }
+
+    .review{
+        width: calc(50% - 20px);
+    }
+    .food{
+        width: calc(50% - 20px);
+    }
+
+    @media screen and (max-width: 600px) {
+        .inner-width{
+            padding: 0 20px;
+        }
+        
+        .skill{
+            width: 100%;
+        }
+
+        .review{
+            width: 100%;
+        }
+        .food{
+            width: 100%;
+        }
+    }
+
+}
+
+/*Button*/
+.button__add{
+    position: fixed;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+/*Authen Modal*/
+.modal {
+    display:none;
+}
+.auth-form {
+    margin: 3rem;
+    background-color: #f5f5f5;
+    border-radius: 3rem;
+}
+/**FORM LOGIN**/
+.auth-form.auth-form-login {    
+    width: 50rem;
+    height: 30rem;
+    display:none;
+}
+/**FORM REGISTER**/
+.auth-form.auth-form-register {
+    width: 50rem;
+    height: 60rem;
+   display: none;
+}
+.auth-form__container-register {
+    width:100%;
+    height:15%;
+    padding: 0 5rem;
+}
+.auth-form__container-login {
+    width:100%;
+    height:30%;
+    padding: 0 5rem;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: darkcyan;
+    padding:2rem;
+    border:3px;
+    border-bottom-style:solid;
+    margin: auto 0;
+}
+
+.auth-form__switch-btn {
+    font-size: 3rem;
+    color: orange;
+    cursor: pointer;
+}
+
+.auth-form__group{
+    justify-content: center;
+    display:flex;
+}
+
+.auth-form__input {
+    width: 80%;
+    height: 4rem;
+    margin: 1rem 0;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    border: 1px solid  var(--border-color);
+    border-radius: 2rem;
+    outline:none;
+}
+
+.auth-form__aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+.auth-form__checkbox{
+    height: 2rem;
+    width: 2rem;
+    margin:0 2rem;
+}
+
+.auth-form__policy-text {
+    font-size: 1.7rem;
+    margin:0;
+}
+
+.auth-form__policy-link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.auth-form__controls {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.auth-form__controls >.btn.btn--primary {
+    margin-right: 3rem;
+}
+
+.auth-form__socials {
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.auth-form__socials-text {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+a.btn.btn--with-icon > img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.header__search__wrap{
+    flex:1;
+    height: 100%;
+    position: relative;
+}
+.header__search{
+    width: 50%;
+    height: 50%;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* SEARCH */
+.header__search__input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline:none;
+    font-size:20px;
+    color:#666;
+    padding: 0 16px;
+    background-color: #F1F1F1;
+    border-radius: 2rem;
+    box-shadow: 0 0 4px #ccc;
+}
+
+/*SLIDERSHOW MIDDLE*/
+.slidershow {
+    width: 70vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation__slidershow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bar {
+    width: 100px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~ .s1 {
+    margin-left: 0;
+}
+#r2:checked~ .s1 {
+    margin-left: -20%;
+}
+#r3:checked~ .s1 {
+    margin-left: -40%;
+}
+#r4:checked~ .s1 {
+    margin-left: -60%;
+}
+#r5:checked~ .s1 {
+    margin-left: -80%;
+}
+
+/*Container*/
+
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    background: transparent;
+    width: 14px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px #00000070;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg,#3498db,#34495e);
+    border-radius: 10px
+}
+
+/* COVER */
+    /* FOOD COVER */
+.food-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.food-cover-img-1{
+    background-image: url(../Image/Cooking/culinary-frank-crispy-fried-potatoes-2.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-2{
+    background-image: url(../Image/Cooking/culinary-frank-frank-fried-chicken-ffc-5.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-3{
+    background-image: url(../Image/Cooking/Blogamerican-cheese-burger-thumbnail-2.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-4{
+    background-image: url(../Image/Cooking/culinary-frank-thai-shrimp-cake-1.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-5{
+    background-image: url(../Image/Cooking/culinary-frank-tom-yum-2.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-6{
+    background-image: url(../Image/Cooking/culinary-frank-padthai-3.jpg);
+    opacity: 0.8;
+}
