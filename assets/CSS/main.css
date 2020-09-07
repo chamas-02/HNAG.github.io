@@ -15,6 +15,10 @@
     padding: 0 4rem;
 }
 
+/* .inner-width.foods {
+    text-align: center;
+} */
+
 .logo{
     width: 10rem;
     height: 10rem;
@@ -300,7 +304,7 @@ section.dark .section__title::before{
     border: 1px solid #48db48;
     border-radius: 1rem;
     margin: 2rem 0;
-    padding: 4rem 2rem;
+    padding: 10rem 5rem;
     color: #fff;
     cursor: pointer;
     transition: .3s linear;
@@ -315,6 +319,7 @@ section.dark .section__title::before{
     color: #fff;
     cursor: pointer;
     transition: .3s linear;
+    
 }
 
 .review .icon{
@@ -333,6 +338,7 @@ section.dark .section__title::before{
 .review h4{
     font-size:26px;
     margin-bottom: 6px;
+    text-shadow: 2px 0 0 #353b48;
 }
 .food h4{
     font-size:26px;
@@ -440,242 +446,9 @@ section.dark .section__title::before{
 
 }
 
-/*Button*/
-.button__add{
-    position: fixed;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    right: 3rem;
-    bottom: 3rem;
+img.more {
+    right:0;
 }
-
-/*Authen Modal*/
-.modal {
-    display:none;
-}
-.auth-form {
-    margin: 3rem;
-    background-color: #f5f5f5;
-    border-radius: 3rem;
-}
-/**FORM LOGIN**/
-.auth-form.auth-form-login {    
-    width: 50rem;
-    height: 30rem;
-    display:none;
-}
-/**FORM REGISTER**/
-.auth-form.auth-form-register {
-    width: 50rem;
-    height: 60rem;
-   display: none;
-}
-.auth-form__container-register {
-    width:100%;
-    height:15%;
-    padding: 0 5rem;
-}
-.auth-form__container-login {
-    width:100%;
-    height:30%;
-    padding: 0 5rem;
-}
-
-.auth-form__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.auth-form__heading {
-    font-size: 3.5rem;
-    font-weight: 400;
-    color: darkcyan;
-    padding:2rem;
-    border:3px;
-    border-bottom-style:solid;
-    margin: auto 0;
-}
-
-.auth-form__switch-btn {
-    font-size: 3rem;
-    color: orange;
-    cursor: pointer;
-}
-
-.auth-form__group{
-    justify-content: center;
-    display:flex;
-}
-
-.auth-form__input {
-    width: 80%;
-    height: 4rem;
-    margin: 1rem 0;
-    padding: 0 2rem;
-    font-size: 1.5rem;
-    border: 1px solid  var(--border-color);
-    border-radius: 2rem;
-    outline:none;
-}
-
-.auth-form__aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-    width: 100%;
-}
-.auth-form__checkbox{
-    height: 2rem;
-    width: 2rem;
-    margin:0 2rem;
-}
-
-.auth-form__policy-text {
-    font-size: 1.7rem;
-    margin:0;
-}
-
-.auth-form__policy-link {
-    text-decoration: none;
-    color: blueviolet;
-}
-
-.auth-form__controls {
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.auth-form__controls >.btn.btn--primary {
-    margin-right: 3rem;
-}
-
-.auth-form__socials {
-    width: 60%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.auth-form__socials-text {
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-a.btn.btn--with-icon > img {
-    width: 10rem;
-    height: 10rem;
-}
-
-.header__search__wrap{
-    flex:1;
-    height: 100%;
-    position: relative;
-}
-.header__search{
-    width: 50%;
-    height: 50%;
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-}
-
-/* SEARCH */
-.header__search__input{
-    width: 100%;
-    height: 100%;
-    border:none;
-    outline:none;
-    font-size:20px;
-    color:#666;
-    padding: 0 16px;
-    background-color: #F1F1F1;
-    border-radius: 2rem;
-    box-shadow: 0 0 4px #ccc;
-}
-
-/*SLIDERSHOW MIDDLE*/
-.slidershow {
-    width: 70vw;
-    height: 70vh;
-    overflow: hidden;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.navigation__slidershow {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.bar {
-    width: 100px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.bar:hover{
-    background: #fff;
-}
-
-input[name="r"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.slides {
-    width: 500%;
-    height: 100%;
-    display: flex;
-}
-
-.slide {
-    width: 20%;
-    transition: 0.6s;
-}
-
-.slide img{
-    width: 100%;
-    height: 100%;
-}
-
-#r1:checked~ .s1 {
-    margin-left: 0;
-}
-#r2:checked~ .s1 {
-    margin-left: -20%;
-}
-#r3:checked~ .s1 {
-    margin-left: -40%;
-}
-#r4:checked~ .s1 {
-    margin-left: -60%;
-}
-#r5:checked~ .s1 {
-    margin-left: -80%;
-}
-
-/*Container*/
-
-
-
 /* SCROLL BAR */
 ::-webkit-scrollbar{
     background: transparent;
@@ -693,13 +466,40 @@ input[name="r"] {
 }
 
 /* COVER */
-    /* FOOD COVER */
-.food-cover {
+   
+.food-cover,
+.review-cover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
+    /* REVIEW COVER */
+.review-cover-img-1 {
+    background-image: url(../Image/Review/Chài_Village/1.jpg);
+    opacity: 0.8;
+}
+.review-cover-img-2 {
+    background-image: url(../Image/Review/Tukume_Kitchen/1.jpg);
+    opacity: 0.8;
+}
+.review-cover-img-3 {
+    background-image: url(../Image/Review/Spicy_Box/1.jpg);
+    opacity: 0.8;
+}
+.review-cover-img-4 {
+    background-image: url(../Image/Review/Fuji_Saryo/1.jpeg);
+    opacity: 0.8;
+}
+.review-cover-img-5 {
+    background-image: url(../Image/Review/A_Priori_Coffee_House/1.jpeg);
+    opacity: 0.8;
+}
+.review-cover-img-6 {
+    background-image: url(../Image/Review/Happy_Gelato/1.jpeg);
+    opacity: 0.8;
+}
+     /* FOOD COVER */
 .food-cover-img-1{
     background-image: url(../Image/Cooking/culinary-frank-crispy-fried-potatoes-2.jpg);
     opacity: 0.8;
@@ -729,3 +529,4 @@ input[name="r"] {
     background-image: url(../Image/Cooking/culinary-frank-padthai-3.jpg);
     opacity: 0.8;
 }
+    
