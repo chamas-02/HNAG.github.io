@@ -124,7 +124,7 @@
         content: " Hoàng Nam";
     }
     50% {
-        content: " A Developer";
+        content: " A Cook";
     }
     75% {
         content: " Food Blogger"
@@ -362,6 +362,12 @@ section.dark .section__title::before{
     color: #fff;
 }
 
+div.img--more{
+    width: 100%;
+    justify-content: center;
+    text-align: center  ;
+}
+
 @media screen and (max-width:980px){
     .menu-toggler{
         display: block;
@@ -501,32 +507,32 @@ img.more {
 }
      /* FOOD COVER */
 .food-cover-img-1{
-    background-image: url(../Image/Cooking/culinary-frank-crispy-fried-potatoes-2.jpg);
+    background-image: url(../Image/Cooking/Cover/culinary-frank-crispy-fried-potatoes.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-2{
-    background-image: url(../Image/Cooking/culinary-frank-frank-fried-chicken-ffc-5.jpg);
+    background-image: url(../Image/Cooking/Cover/culinary-frank-frank-fried-chicken.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-3{
-    background-image: url(../Image/Cooking/Blogamerican-cheese-burger-thumbnail-2.jpg);
+    background-image: url(../Image/Cooking/Cover/Blogamerican-cheese-burger.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-4{
-    background-image: url(../Image/Cooking/culinary-frank-thai-shrimp-cake-1.jpg);
+    background-image: url(../Image/Cooking/Cover/culinary-frank-thai-shrimp-cake.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-5{
-    background-image: url(../Image/Cooking/culinary-frank-tom-yum-2.jpg);
+    background-image: url(../Image/Cooking/Cover/culinary-frank-tom-yum.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-6{
-    background-image: url(../Image/Cooking/culinary-frank-padthai-3.jpg);
+    background-image: url(../Image/Cooking/Cover/culinary-frank-padthai.jpg);
     opacity: 0.8;
 }
     

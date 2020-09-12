@@ -11,4 +11,3 @@ $(document).ready(function(){
         $(".header__menu").toggleClass("active");
     });
 });
-

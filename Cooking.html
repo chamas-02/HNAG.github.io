@@ -3,49 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooking</title>
+    <title>Hôm nay ăn gì - Cooking</title>
     <link rel=".Image/Icon/Icon.png" href="shortcut icon">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" href="assets/CSS/base.css">
-    <link rel="stylesheet" href="assets/CSS/Cooking.css">
+    <link rel="stylesheet" href="assets/CSS/Cooking.css">   
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/JS/scripts.js"></script>
 </head>
 <body>
-    <div class="main">
-        
-        <header class="header grid">
-            
-                <nav class="header__navbar">
-                    
-                    <div class="home">
-                        <div class="icon__home">
-                            <a href="index.html"><img src="assets/Image/food.png" alt="icon" class="icon_home"></a>
+    <div class="main">        
+        <header class="header">
+            <div class="inner-width">
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header__menu">
+                    <a href="index.html">Home</a>
+                    <a href="Review.html">Review</a>
+                    <a href="Cooking.html">Cooking</a>
+                    <a href="Story.html">Story</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+            </div>
+        </header>
+
+
+
+        <div class="container">   
+
+            <!-- ABOUT -->
+
+            <!-- <section id="about">
+                <div class="inner-width">
+                    <h1 class="section__title">About</h1>
+                    <div class="about__content">
+                        <img src="assets/Image/Icon/icons8-facebook-200.png" alt="avatar" class="about__pic">
+                        <div class="about__text">
+                            <h2>Hi</h2>
+                            <h3>
+                                <span>Test</span>
+                                <span>Test</span>
+                                <span>Test</span>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, reiciendis eligendi. Ipsa cupiditate quod accusantium delectus minima. Quisquam laborum voluptas necessitatibus neque provident perferendis non ducimus sed, inventore aspernatur asperiores!
+                            </p>
                         </div>
                     </div>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="index.html" class="header__navbar-item-link">Home</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="Cooking.html" class="header__navbar-item-link header__navbar-item-link--active">Cooking</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="Story.html" class="header__navbar-item-link">Story</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="A_Little_Leaf.html" class="header__navbar-item-link">A Little Leaf</a>
-                        </li>                    
-                    </ul>
-                </nav>
-        </header>
-        <div class="container">
-           
-        </div>
+
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar html"></div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill__bar css"></div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>C++</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill__bar cplusplus"></div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>JS</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill__bar js"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>        -->
+
+            <!-- COOKING -->
         
+            <section id="foods">
+                <div class="inner-width">
+                    <h1 class="section__title text-gradient">Cooking</h1>
+                    <div class="foods">
+
+                        <div class="food food-cover food-cover-img-1" id="myBtn">
+                            <a href="#">
+                                <h4>Crispy Fried Potatoes</h4>
+                                <p>12 June 2019</p>
+                            </a>
+                        </div>
+                        
+                        <div class="food food-cover food-cover-img-2">
+                            <a href="#">
+                                <h4>Frank's Fried Chicken</h4>
+                                <p>May 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-3">
+                            <a href="#">
+                                <h4>American Cheeseburger</h4>
+                                <p>23 May 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-4">
+                            <a href="#">
+                                <h4>Thai Shrimp Cake</h4>
+                                <p>2 May 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-5">
+                            <a href="#">
+                                <h4>Tom Yum</h4>
+                                <p>18 Arpil 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-6">
+                            <a href="#">
+                                <h4>Pad Thai</h4>
+                                <p>11 Arpil 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-7">
+                            <a href="#">
+                                <h4>Bibimbap</h4>
+                                <p>4 April 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-8">
+                            <a href="#">
+                                <h4>Jajangmyeon</h4>
+                                <p>28 March 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-9">
+                            <a href="#">
+                                <h4>Buldak</h4>
+                                <p>21 March 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-10">
+                            <a href="#">
+                                <h4>Rabokki</h4>
+                                <p>14 March 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-11">
+                            <a href="#">
+                                <h4>Fish Sauce Chicken Wings</h4>
+                                <p>11 Arpil 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-12">
+                            <a href="#">
+                                <h4>Vietnamese Meatloaf</h4>
+                                <p>28 February 2019</p>
+                            </a>
+                        </div>
+                        
+                        <div class="food food-cover food-cover-img-13">
+                            <a href="#">
+                                <h4>Vietnamese Shaking Beef</h4>
+                                <p>31 January 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-14">
+                            <a href="#">
+                                <h4>Vietnamese Braised Pork Belly With Eggs</h4>
+                                <p>24 January 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-15">
+                            <a href="#">
+                                <h4>Taiwanese Popcorn Chicken</h4>
+                                <p>17 January 2019</p>
+                            </a>
+                        </div>
+
+                        <div class="food food-cover food-cover-img-16">
+                            <a href="#">
+                                <h4>Korean BBQ Pork Belly</h4>
+                                <p>10 January 2019</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="img--more">
+                        <a href="#">
+                            <img src="/assets/Image/Icon/icons8-more-96.png" alt="" class="more"> 
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            </section>
+        </div>  
 
         <footer class="footer">
-
+            <div class="footer-inner-width">
+				<div class="footer-info-pos align-items-center d-flex">
+					<div id="footer-info">
+						<h2>Gourmet Reviu</h2>
+                        <p>Design by "Bao & Nam"</p>
+                        <p>Email: 1951052014bao@ou.edu.vn</p>
+                        <p>Email: 1951052123nam@ou.edu.vn</p>
+					</div>
+                    <div class="social-media">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                    
+				</div>
+			</div>
         </footer>
+
     </div>
 </body>
 </html>

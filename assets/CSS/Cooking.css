@@ -1,61 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  :root {
+    --primary: #22c3fd;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }
+  
+
+/*Header*/
 .header {
-    height: 100px;
-    width: 100vw;
-    background-color: var(--background-color-main);
-    box-shadow: 0 0 4px #ccc;
+    width: 100%;
+    top: 0;
+    background-color: transparent;
     position: fixed;
+    z-index: 999;
+    padding:3rem 0;
+    transition:  .3s linear;
 }
 
-.header__navbar {
-    display: flex;
-    margin: 0 10rem 0;
-    justify-content: space-between;
-    height: 100%;
+.inner-width {
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 4rem;
+}
+
+.header .inner-width {
+    display:flex;
     align-items: center;
+    justify-content: center;
 }
 
-.icon__home{
-    height: 100px;
-    width: 100px;
-    transition: all 0.5s;
+.menu-toggler {
+    background: none;
+    width: 3rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
 }
 
-.icon__home:hover{
-    background-color: var(--orange--color);
-    border-radius: 50%;
+.menu-toggler span {
+    display: block;
+    height: 0.3rem;
+    background-color: #fff;
+    margin: 0.6rem 0;
+    position: relative;
+    transition: .3s linear;
 }
 
-.home {
-    color:var(--white--color);
-}
-.header__navbar-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.header__navbar-item {
-    display:inline-block;
-    margin: 0 10px;
-    align-items: center;
-}
-
-.header__navbar-item-link {
+.header__menu a{
+    color:#48dbfb;
     font-size: 2.5rem;
-    text-decoration: none;
-    font-weight: 300;
-    color:var(--orange--color);
-    padding: 1rem 2rem;
-    border-bottom: 3px solid var(--orange--color);
-    transition: all 0.5s;
+    font-weight: 500;
+    margin-left: 3rem;
+    transition: .2s linear;
+    border-bottom: 2px;
+    padding:2rem;
 }
 
-.header__navbar-item-link--active{
-    background-color: var(--orange--color);
-    color: var(--white--color);
-    border-radius: 4rem;
+.header__menu a:hover {
+    color: #48dbfb !important;
+    border-bottom: solid #48dbfb;
 }
-.header__navbar-item-link:hover {
-    background-color: var(--orange--color);
-    color: var(--white--color);
-    border-radius: 4rem;
+
+.sticky {
+    background-color: #f9f9f9;
+    padding: 1.8rem 0;
 }
+
+
+.sticky .header__menu a{
+    color:var(--orange--color);
+}
+
+.sticky .menu-toggler span{
+    color: var(--orange--color);
+}
+
+section{
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.section__title{
+    text-align:center;
+    margin-bottom: 4rem;
+    position: relative;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+
+.text-gradient {
+    font-weight: bold;
+    font-size: 4rem;
+    display: inline-block;
+    color: var(--purple);
+    }
+    @supports (-webkit-background-clip: text) {
+    .text-gradient {
+    color: transparent;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    }
+    }
+
+.about__content{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__pic{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+.about__text {
+    flex: 1;
+}
+
+.about__text h3 {
+    margin: 10px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.about__text h3 span:nth-child(1):after,
+.about__text h3 span:nth-child(2):after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 14px;
+}
+
+.about__text p{
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.skills{
+    margin-top:4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: calc(50% - 20px);
+    margin: 15px 0;
+}
+
+.skill__info {
+    display:flex;
+    justify-content: space-between;
+}
+
+.skill__info span{
+    font-size:1.5rem;
+}
+
+.skill__bar {
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 14px;
+    position: relative;
+}
+
+.skill__bar::after{
+    content:"";
+    position: absolute;
+    height: 6px;
+    background-color: #48dbfb;
+    bottom: 0;
+}
+
+.html:after{
+    width: 90%;
+}
+.css:after{
+    width: 80%;
+}
+.cplusplus:after{
+    width: 70%;
+}
+.js:after{
+    width: 50%;
+}
+
+section.dark{
+    background-color: #353b48;
+}
+
+section.light{
+    background-color: #f9f9f9;
+}
+
+.foods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.food {
+    width: calc(33% - 20px);
+    text-align: center;
+    border: 1px solid #48db48;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 20rem 10rem;
+    color: #fff;
+    transition: .3s linear;    
+}
+
+
+.food h4{
+    font-size:2.6rem;
+    margin-bottom: 6px;
+    color:#f5f5f5;
+}
+
+
+.food p{
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+
+
+
+
+@media screen and (max-width:980px){
+    .menu-toggler{
+        display: block;
+    }
+    .menu-toggler span{
+        background-color: var(--orange--color);
+    }
+    .header__menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #666;
+        top: 0;
+        right: -100%;
+        max-width: 40rem;
+        padding: 8rem 5rem;
+        transition: .3s linear;
+    }
+
+    .header__menu a{
+        display: block;
+        font-size: 3rem;
+        margin:3rem 0;
+    }
+
+    .sticky .header__menu {
+        background-color: #f9f9f9;
+    }
+
+    .header__menu.active{
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top:4px;
+    }
+    .menu-toggler.active span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-toggler.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom:14px;
+    }
+
+    .inner-width{
+        max-width: 800px;
+    }
+
+    .about__pic{
+        margin: 0 auto 60px;
+    }
+
+    .about__text{
+        flex: 100%;
+        text-align: center;
+    }
+
+    .food{
+        width: calc(50% - 20px);
+    }
+
+    @media screen and (max-width: 600px) {
+        .inner-width{
+            padding: 0 20px;
+        }
+        
+        .skill{
+            width: 100%;
+        }
+
+        .review{
+            width: 100%;
+        }
+        .food{
+            width: 100%;
+        }
+    }
+
+}
+
+div.img--more{
+    width: 100%;
+    justify-content: center;
+    text-align: center  ;
+}
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    background: transparent;
+    width: 14px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px #00000070;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg,#3498db,#34495e);
+    border-radius: 10px
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 3rem 0;
+    background: #666;
+}
+.footer-inner-width {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.footer-info-pos{
+	padding: 4rem 2rem;
+	justify-content: space-between;
+}
+h2{
+    font-size: 3rem;
+    color: #fff;
+}
+h2~p{
+    font-size: 2rem;
+    margin:10px;
+    color:#fff;
+}
+.social-media a{
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    transition: .2s linear;
+}
+
+.social-media a:hover{
+    color: #48dbfb;
+}
+
+/* MODAL */
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+    /* COVER */
+   
+.food-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+     /* FOOD COVER */
+.food-cover-img-1{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-crispy-fried-potatoes.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-2{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-frank-fried-chicken.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-3{
+    background-image: url(../Image/Cooking/Cover/Blogamerican-cheese-burger.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-4{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-thai-shrimp-cake.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-5{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-tom-yum.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-6{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-padthai.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-7{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-bibimbap.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-8{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-jajangmyeon.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-9{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-buldak.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-10{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-rabokki.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-11{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-fish-sauce-chicken-wings.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-12{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-broken-rice.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-13{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-shaking-beef.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-14{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-braised-pork-belly-with-eggs.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-15{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-taiwanese-popcorn-chicken.jpg);
+    opacity: 0.8;
+}
+
+.food-cover-img-16{
+    background-image: url(../Image/Cooking/Cover/culinary-frank-korean-bbq-pork-belly.jpg);
+    opacity: 0.8;
+}
+
