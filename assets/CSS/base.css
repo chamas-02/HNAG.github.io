@@ -7,6 +7,15 @@
     --background-color-main:#353b48;
     --background-color-sup:#ff8a00;
     --border-color:#dbdbdb;   
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
 }
 
 *{

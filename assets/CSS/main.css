@@ -15,15 +15,11 @@
     padding: 0 4rem;
 }
 
-/* .inner-width.foods {
-    text-align: center;
-} */
-
 .logo{
     width: 10rem;
     height: 10rem;
     background-size: contain;
-    background: url(../Image/Icon/food.png);
+    background: url(../Image/Icon/icons8-sunny-side-up-eggs-100.png);
     transition: .1s linear;
 }
 
@@ -40,7 +36,7 @@
 }
 
 .menu-toggler {
-    background: none;
+    background:none;
     width: 3rem;
     border: none;
     cursor: pointer;
@@ -61,7 +57,7 @@
 
 .header__menu a{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-left: 3rem;
     transition: .2s linear;
@@ -151,119 +147,11 @@ section{
     text-align: center;
     margin-bottom: 80px;
     position: relative;
-    font-size: 26px;
+    font-size: 3rem;
     padding-bottom: 20px;
     color: #666;
 }
 
-.section__title::before {
-    content:"";
-    position: absolute;
-    width:80px;
-    height:3px;
-    background-color: #111;
-    bottom: 0;
-    left: calc(50% - 40px);
-}
-
-.section__title::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 10px;
-    background-color: #3498db;
-    border: 4px soild #f1f1f1;
-    left: calc(50% - 6px);
-    bottom: -3px;
-}
-
-.about__content{
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.about__pic{
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 100px;
-}
-.about__text {
-    flex: 1;
-}
-
-.about__text h3 {
-    margin: 10px 0;
-    color: #444;
-    font-size: 16px;
-}
-
-.about__text h3 span:nth-child(1):after,
-.about__text h3 span:nth-child(2):after{
-    content: "";
-    width: 6px;
-    height: 6px;
-    background-color: #444;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 14px;
-}
-
-.about__text p{
-    font-size: 2rem;
-    text-align: justify;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-.skills{
-    margin-top:4rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.skill{
-    width: calc(50% - 20px);
-    margin: 15px 0;
-}
-
-.skill__info {
-    display:flex;
-    justify-content: space-between;
-}
-
-.skill__info span{
-    font-size:1.5rem;
-}
-
-.skill__bar {
-    height: 3px;
-    background-color: #ddd;
-    margin-top: 14px;
-    position: relative;
-}
-
-.skill__bar::after{
-    content:"";
-    position: absolute;
-    height: 6px;
-    background-color: #48dbfb;
-    bottom: 0;
-}
-
-.html:after{
-    width: 90%;
-}
-.css:after{
-    width: 80%;
-}
-.cplusplus:after{
-    width: 70%;
-}
-.js:after{
-    width: 50%;
-}
 
 section.dark{
     background-color: #353b48;
@@ -338,7 +226,7 @@ section.dark .section__title::before{
 .review h4{
     font-size:26px;
     margin-bottom: 6px;
-    text-shadow: 2px 0 0 #353b48;
+    text-shadow: 1px 0 0 #666;
 }
 .food h4{
     font-size:26px;
