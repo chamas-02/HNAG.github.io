@@ -139,7 +139,7 @@
 }
 
 section{
-    padding: 100px 0;
+    padding: 5rem 0;
     background-color: #f1f1f1;
 }
 
@@ -153,25 +153,15 @@ section{
 }
 
 
-section.dark{
-    background-color: #353b48;
+#reviews .inner-width{
+    border-bottom:2px solid #34495e;
 }
 
-section.light{
-    background-color: #f9f9f9;
+
+#foods .inner-width{
+    border-bottom:2px solid #34495e;
 }
 
-section.dark .section__title{
-    color:#f1f1f1;
-}
-
-section.dark .section__title::before{
-    background-color: #f1f1f1;
-}
-
-#reviews {
-    background-color: #353b48;
-}
 
 .reviews {
     display: flex;
@@ -253,7 +243,7 @@ section.dark .section__title::before{
 div.img--more{
     width: 100%;
     justify-content: center;
-    text-align: center  ;
+    text-align: center;
 }
 
 @media screen and (max-width:980px){
@@ -261,7 +251,7 @@ div.img--more{
         display: block;
     }
     .menu-toggler span{
-        background-color: var(--orange--color);
+        background-color: #fff;
     }
     .header__menu{
         position: fixed;
@@ -279,6 +269,10 @@ div.img--more{
         display: block;
         font-size: 3rem;
         margin:3rem 0;
+    }
+
+    .sticky .menu-toggler span {
+        background-color: var(--orange--color);
     }
 
     .sticky .header__menu {
