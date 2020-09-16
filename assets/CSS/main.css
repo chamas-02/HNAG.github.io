@@ -145,7 +145,7 @@ section{
 
 .section__title{
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
     position: relative;
     font-size: 3rem;
     padding-bottom: 20px;
@@ -216,7 +216,7 @@ section{
 .review h4{
     font-size:26px;
     margin-bottom: 6px;
-    text-shadow: 1px 0 0 #666;
+    color: #fff;
 }
 .food h4{
     font-size:26px;
@@ -244,6 +244,149 @@ div.img--more{
     width: 100%;
     justify-content: center;
     text-align: center;
+}
+
+div.Contact{
+    width: 100%;
+    height: 30rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    background: white;
+    width:500px;
+    padding:20px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #313131;
+}
+
+.box span{
+    font-size: 60px;
+    height: 60px;
+    display:block;
+    line-height: 80px;
+    text-align: center;
+}
+.box h2{
+    text-transform: uppercase;
+    text-align:  center;
+    margin: 10px 0;
+}
+.box p{
+    text-transform: uppercase;
+    text-align:  center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tbox {
+    width:100%;
+    height:40px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: #313131;
+}
+.tbox a{
+    float: right;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    background: #2980b9;
+    border-radius: 40px;
+    transition: 0.4s;
+}
+.tbox input {
+    border:none;
+    margin: 0 10px;
+    width: 330px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    outline:none;
+    padding: 10px 0;
+}
+.tbox a:hover {
+    opacity: 0.8;
+}
+
+.box h2{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.we {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border {
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.row{
+    display:flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 30%;
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.i{
+    background: #fff;
+    padding: 30px;
+}
+
+.i img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+.we h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.name{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+div.i{
+    border-radius: 5rem;
+}
+
+div.i h3{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-weight: lighter;
 }
 
 @media screen and (max-width:980px){
@@ -315,6 +458,12 @@ div.img--more{
         width: calc(50% - 20px);
     }
 
+    .col{
+        flex:100%;
+        max-width: 80%;
+    }
+
+
     @media screen and (max-width: 600px) {
         .inner-width{
             padding: 0 20px;
@@ -330,6 +479,11 @@ div.img--more{
         .food{
             width: 100%;
         }
+        .col{
+            flex:100%;
+            max-width: 100%;
+        }
+    
     }
 
 }
@@ -341,6 +495,7 @@ img.more {
 ::-webkit-scrollbar{
     background: transparent;
     width: 14px;
+    
 }
 
 ::-webkit-scrollbar-track{
@@ -417,4 +572,74 @@ img.more {
     background-image: url(../Image/Cooking/Cover/culinary-frank-padthai.jpg);
     opacity: 0.8;
 }
-    
+
+/* Footer */
+
+footer{
+	margin: 0;
+	padding: 20px 0 0;
+	background-color: rgb(56, 48, 48);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-inner-width{
+	max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.footer-info-pos{
+	padding: 40px 20px;
+	justify-content: space-between;
+}
+
+#footer-info > h2{
+	text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#footer-info > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact ul{
+    justify-content: center;
+    text-align: center;
+}
+
+ul{
+	display: flex;
+	white-space: wrap;
+	list-style-type: none;
+}
+
+li a{
+	font-size: 50px;
+	padding: 0 10px;
+    color: #fff;
+    transition: .2s linear;
+}
+
+.facebook:hover{
+	color: #4267b2;	
+}
+
+.instagram:hover{
+	color: #ed4956;
+	
+}
+
+.twitter:hover{
+	color: #00acee;
+
+}
+
+.youtube:hover{
+	color: #f00;
+	
+}

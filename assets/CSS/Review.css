@@ -355,3 +355,74 @@ h2~p{
        -webkit-background-clip: text;
     }
  }
+
+ /* Footer */
+
+footer{
+	margin: 0;
+	padding: 20px 0 0;
+	background-color: rgb(56, 48, 48);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-inner-width{
+	max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.footer-info-pos{
+	padding: 40px 20px;
+	justify-content: space-between;
+}
+
+#footer-info > h2{
+	text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#footer-info > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact ul{
+    justify-content: center;
+    text-align: center;
+}
+
+ul{
+	display: flex;
+	white-space: wrap;
+	list-style-type: none;
+}
+
+li a{
+	font-size: 50px;
+	padding: 0 10px;
+    color: #fff;
+    transition: .2s linear;
+}
+
+.facebook:hover{
+	color: #4267b2;	
+}
+
+.instagram:hover{
+	color: #ed4956;
+	
+}
+
+.twitter:hover{
+	color: #00acee;
+
+}
+
+.youtube:hover{
+	color: #f00;
+	
+}
