@@ -210,7 +210,7 @@ table th, table td {
         display: block;
     }
     .menu-toggler span{
-        background-color: var(--orange--color);
+        background-color: #fff;
     }
     .header__menu{
         position: fixed;

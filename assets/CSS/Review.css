@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-  :root {
-    --primary: #22c3fd;
-    --secondary: #13D2B8;
-    --purple: #bd93f9;
-    --pink: #ff6bcb;
-    --blue: #8be9fd;
-    --gray: #333;
-    --font: "Poppins", sans-serif;
-    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
-    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
-  }
-  
+
 
 /*Header*/
 .header {
@@ -135,7 +123,7 @@ section{
         display: block;
     }
     .menu-toggler span{
-        background-color: var(--orange--color);
+        background-color: #fff;
     }
     .header__menu{
         position: fixed;
@@ -262,85 +250,70 @@ h2~p{
 
      /* FOOD COVER */
 .food-cover-img-1{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-crispy-fried-potatoes.jpg);
+    background-image: url(../Image/Review/Chài_Village/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-2{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-frank-fried-chicken.jpg);
+    background-image: url(../Image/Review/Tukume_Kitchen/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-3{
-    background-image: url(../Image/Cooking/Cover/Blogamerican-cheese-burger.jpg);
+    background-image: url(../Image/Review/Spicy_Box/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-4{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-thai-shrimp-cake.jpg);
+    background-image: url(../Image/Review/Fuji_Saryo/1.jpeg);
     opacity: 0.8;
 }
 
 .food-cover-img-5{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-tom-yum.jpg);
+    background-image: url(../Image/Review/A_Priori_Coffee_House/1.jpeg);
     opacity: 0.8;
 }
 
 .food-cover-img-6{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-padthai.jpg);
+    background-image: url(../Image/Review/Happy_Gelato/1.jpeg);
     opacity: 0.8;
 }
 
 .food-cover-img-7{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-bibimbap.jpg);
+    background-image: url(../Image/Review/Cà_Phê_Cô_Ba/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-8{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-jajangmyeon.jpg);
+    background-image: url(../Image/Review/Seesaw_Coffee/1.jpeg);
     opacity: 0.8;
 }
 
 .food-cover-img-9{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-buldak.jpg);
+    background-image: url(../Image/Review/Tokyo_Deli/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-10{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-rabokki.jpg);
+    background-image: url(../Image/Review/Bánh_Mì_PewPew/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-11{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-fish-sauce-chicken-wings.jpg);
+    background-image: url(../Image/Review/Mapiness_Coffee/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-12{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-broken-rice.jpg);
+    background-image: url(../Image/Review/Cetea/1.jpg);
     opacity: 0.8;
 }
 
 .food-cover-img-13{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-shaking-beef.jpg);
+    background-image: url(../Image/Review/Pay_Kin_Cha_Kan/1.jpg);
     opacity: 0.8;
 }
 
-.food-cover-img-14{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-Vietnamese-braised-pork-belly-with-eggs.jpg);
-    opacity: 0.8;
-}
-
-.food-cover-img-15{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-taiwanese-popcorn-chicken.jpg);
-    opacity: 0.8;
-}
-
-.food-cover-img-16{
-    background-image: url(../Image/Cooking/Cover/culinary-frank-korean-bbq-pork-belly.jpg);
-    opacity: 0.8;
-}
-  
 .text-gradient {
     font-weight: bold;
     font-size: 4rem;

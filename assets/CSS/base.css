@@ -17,7 +17,18 @@
     --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
     --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  :root {
+    --primary: #22c3fd;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }
 *{
     box-sizing:inherit; /*ke thua the chua no*/
     margin: 0;

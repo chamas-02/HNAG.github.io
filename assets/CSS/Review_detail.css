@@ -193,7 +193,6 @@
     padding: 2rem;
 }
 
-.post__content-text h2,
 .post__content-text h3,
 .post__content-prep h3,
 .cooking h3{
@@ -225,7 +224,7 @@ h3 {
         display: block;
     }
     .menu-toggler span{
-        background-color: var(--orange--color);
+        background-color: #fff;
     }
     .header__menu{
         position: fixed;
@@ -373,3 +372,18 @@ li a{
 	color: #f00;
 	
 }
+
+.text-gradient {
+    font-weight: bold;
+    font-size: 4rem;
+    display: inline-block;
+    color: var(--purple);
+ }
+ 
+ @supports (-webkit-background-clip: text) {
+    .text-gradient {
+       color: transparent;
+       background-image: var(--gradient);
+       -webkit-background-clip: text;
+    }
+ }
