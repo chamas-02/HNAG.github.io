@@ -378,6 +378,9 @@ li a{
         #contact ul li a{
             font-size:2rem;
         }
+        .review-img{
+            width: 100%;
+        }
     }
 
 }
