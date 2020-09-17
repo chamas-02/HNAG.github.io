@@ -152,14 +152,13 @@
 }
 
 .slides img{
-	width: 400px;
 	display: none;
-	margin: 20px;
 }
 
 .slides img.active{
     display: inline-block;
-    border-radius: 2rem;
+    width: 100%;
+    padding: 2rem;
 }
 
 .prevBtn:hover , .nextBtn:hover{
